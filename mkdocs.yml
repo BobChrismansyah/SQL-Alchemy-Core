@@ -5,7 +5,7 @@ site_url: https://bobchrismansyah.github.io/Docs-Machine-Learning/
 nav:
     - Home: index.md
     - About: about.md
-    - Docs:
+    - docs:
         - SQL-Alchemy-Core: index.md
         - Expression-Language: Expression-Language/index.md
         # - Neural Network: docs/neural-network/index.md
