@@ -1,5 +1,5 @@
 site_name: SQL Alchemy
-site_url: https://bobchrismansyah.github.io/Docs-Machine-Learning/
+site_url: https://bobchrismansyah.github.io/SQL-Alchemy-Core
 
 # Navigation
 nav:
@@ -17,7 +17,7 @@ nav:
         
 # Repository
 repo_name: Docs-SQL-Alchemy_Bhs.Indonesia
-# repo_url: https://github.com/BobChrismansyah/Docs-Machine-Learning
+repo_url: https://bobchrismansyah.github.io/SQL-Alchemy-Core
 edit_uri: edit/main/docs/
 
 # Copyright
