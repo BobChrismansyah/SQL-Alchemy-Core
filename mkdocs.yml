@@ -18,11 +18,11 @@ nav:
         
 # Repository
 repo_name: Docs-SQL-Alchemy_Bhs.Indonesia
-repo_url: https://bobchrismansyah.github.io/SQL-Alchemy-Core
+repo_url: https://github.com/BobChrismansyah/SQL-Alchemy-Core
 edit_uri: edit/main/docs/
 
 # Copyright
-copyright: Copyright &copy; 2022 BobChrismansyah
+copyright: 2022 BobChrismansyah, Ariandini Aulia, Ahmad Haidir
 
 # Configuration
 theme:
@@ -84,7 +84,7 @@ theme:
   font:
     text: Ubuntu
     code: Roboto Mono
-  favicon: assets/favicon.png
+  favicon: assets/iconsql.ico
   icon:
     logo: material/bookshelf
 
