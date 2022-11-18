@@ -8,7 +8,7 @@ nav:
     - docs:
         - SQL-Alchemy-Core: index.md
         - Expression-Language: Expression-Language/index.md
-        # - Neural Network: docs/neural-network/index.md
+        - Connecting-to-Database: Connecting-to-Database/index.md
         # - Naive Bayes: docs/naive-bayes/index.md
         # - Logistic Regression: docs/logistic-regression/index.md
         # - Decision Tree: docs/decision-tree/index.md
