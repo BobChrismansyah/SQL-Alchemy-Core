@@ -7,11 +7,11 @@ nav:
     - About: about.md
     - docs:
         - Docs: index.md
-        - SQL-Alchemy-Core: docs/index.md
-        - Expression-Language: docs/Expression-Language/index.md
-        - Connecting-to-Database: docs/Connecting-to-Database/index.md
-        - Creating Table: docs/Creating-Table/index.md
+        - SQL-Alchemy Core: docs/index.md
         - Expression Language: docs/Expression-Language/index.md
+        - Connecting to Database: docs/Connecting-to-Database/index.md
+        - Creating Table: docs/Creating-Table/index.md
+        - Executing Language: docs/Executing-Expression/index.md
         # - Decision Tree: docs/decision-tree/index.md
         # - Clustering: docs/clustering/index.md
         # - Churn Prediction: docs/churn-prediction/index.md
