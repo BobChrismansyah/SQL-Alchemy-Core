@@ -6,7 +6,8 @@ nav:
     - Home: index.md
     - About: about.md
     - docs:
-        - SQL-Alchemy-Core: index.md
+        - Docs: index.md
+        - SQL-Alchemy-Core: docs/index.md
         - Expression-Language: docs/Expression-Language/index.md
         - Connecting-to-Database: docs/Connecting-to-Database/index.md
         # - Naive Bayes: docs/naive-bayes/index.md
