@@ -66,6 +66,8 @@ theme:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
+      primary: deep-orange
+      accent: red
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
@@ -73,6 +75,8 @@ theme:
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
+      primary: deep-orange
+      accent: red
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
@@ -129,8 +133,10 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.magiclink:
       repo_url_shorthand: true
-      user: maling-it
-      repo: maling-it.github.io
+      user: BobChrismansyah
+      repo: SQL-Alchemy-Core
+      # user: maling-it
+      # repo: maling-it.github.io
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.superfences:
