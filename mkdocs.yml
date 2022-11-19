@@ -13,7 +13,7 @@ nav:
         - Creating Table: docs/Creating-Table/index.md
         - Executing Language: docs/Executing-Expression/index.md
         - Selecting Rows: docs/Selecting-Rows/index.md
-        # - Clustering: docs/clustering/index.md
+        - Using Textual SQL: docs/Using-Textual-SQL/index.md
         # - Churn Prediction: docs/churn-prediction/index.md
         
 # Repository
@@ -84,7 +84,7 @@ theme:
   font:
     text: Ubuntu
     code: Roboto Mono
-  favicon: assets/iconsql.ico
+  favicon: assets/favicon.png
   icon:
     logo: material/bookshelf
 
@@ -96,6 +96,10 @@ plugins:
 
   - minify:
       minify_html: true
+  - git-revision-date-localized:
+      enable_creation_date: true
+  - git-authors
+  
 
 # Customization
 extra:
