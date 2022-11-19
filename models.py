@@ -87,12 +87,35 @@ ins = students.insert()
 
 # ================ Menggunakan Alias =================
 
-
 # ========== alias ==========
-from sqlalchemy.sql import alias, select
-st = students.alias("a")
-s = select([st]).where(st.c.id > 2)
-result = conn.execute(s).fetchall()
+# from sqlalchemy.sql import alias, select
+# st = students.alias("a")
+# s = select([st]).where(st.c.id > 2)
+# result = conn.execute(s).fetchall()
+
+# for row in result:
+#    print (row)
+# ========== alias ==========
+
+# ========== Update ==========
+# conn = engine.connect()
+# stmt=students.update().where(students.c.lastname=='Saja').values(lastname='Sajami')
+# conn.execute(stmt)
+# s = students.select()
+# result = conn.execute(s).fetchall()
+
+# for row in result:
+#    print (row)
+# ========== Update ==========
+
+# ========== Update mengggunakan modul sqlalchemy.sql.expression ==========   
+from sqlalchemy.sql.expression import update
+stmt = update(students).where(students.c.lastname == 'Sajami').values(lastname = 'Lagi')
+
+conn.execute(stmt)
+s = students.select()
+result = conn.execute(s)
 
 for row in result:
    print (row)
+# ========== Update mengggunakan modul sqlalchemy.sql.expression  ==========
