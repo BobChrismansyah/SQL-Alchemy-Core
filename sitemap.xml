@@ -21,6 +21,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://bobchrismansyah.github.io/SQL-Alchemy-Core/docs/Delete-Expression/</loc>
+         <lastmod>2022-11-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://bobchrismansyah.github.io/SQL-Alchemy-Core/docs/Executing-Expression/</loc>
          <lastmod>2022-11-19</lastmod>
          <changefreq>daily</changefreq>
@@ -47,6 +52,11 @@
     </url>
     <url>
          <loc>https://bobchrismansyah.github.io/SQL-Alchemy-Core/docs/Using-Aliases/</loc>
+         <lastmod>2022-11-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://bobchrismansyah.github.io/SQL-Alchemy-Core/docs/Using-Multiple-Tables/</loc>
          <lastmod>2022-11-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
