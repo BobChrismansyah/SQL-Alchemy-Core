@@ -213,15 +213,43 @@ addresses = Table(
 # ========== mengambil data dari kedua tabel ==========
 
 # ========== Update beberapa tabel ==========
-stmt = students.update().\
-values({
-   students.c.name:'Ariandini',
-   addresses.c.email_add:'dini.cantik@proton.me'
-}).\
-where(students.c.id == addresses.c.id)
+# stmt = students.update().\
+# values({
+#    students.c.name:'Ariandini',
+#    addresses.c.email_add:'dini.cantik@proton.me'
+# }).\
+# where(students.c.id == addresses.c.id)
 #Namun di SQLite tidak mendukung multi-table UPDATE 
 
 # stmt = students.update().\
 #    values(name = 'Bob').\
 #    where(students.c.id == addresses.c.id)
 # ========== Update beberapa tabel ==========
+
+# ========== Update Parameter Berurutan ==========
+
+# stmt = students.update(preserve_parameter_order = True).\
+#    values([(students.c.y, 20), (students.c.x, students.c.y + 10)])
+# ========== Update Parameter Berurutan ==========
+
+
+# ========== Hapus Beberapa Tabel ==========
+# stmt = students.delete().\
+#    where(students .c.id == addresses.c.id).\
+#    where(addresses.c.email_add.startswith('gmail'))
+# conn.execute(stmt)
+
+#output error karena SQLite tidak mendukung multi-table DELETE
+# ========== Hapus Beberapa Tabel ==========
+
+# ========== Menggunakan Join ==========
+# from sqlalchemy import join
+# from sqlalchemy.sql import select
+# j = students.join(addresses, students.c.id == addresses.c.st_id)
+# stmt = select([students]).select_from(j)
+# result = conn.execute(stmt)
+
+# for row in result:
+#    print (row)
+       
+# ========== Menggunakan Join ==========

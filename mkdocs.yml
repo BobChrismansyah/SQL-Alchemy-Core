@@ -14,9 +14,11 @@ nav:
         - Executing Language: docs/Executing-Expression/index.md
         - Selecting Rows: docs/Selecting-Rows/index.md
         - Using Textual SQL: docs/Using-Textual-SQL/index.md
-        - Using-Aliases: docs/Using-Aliases/index.md
-        - Update-Expression: docs/Update-Expression/index.md
-        # - Churn Prediction: docs/churn-prediction/index.md
+        - Using Aliases: docs/Using-Aliases/index.md
+        - Update Expression: docs/Update-Expression/index.md
+        - Parameter Ordered Update: docs/Ordered-Updates/index.md
+        - Multiple Table Delete: docs/Multiple-Table-Delete/index.md
+        - Using Joins: docs/Using-Joins/index.md
         
 # Repository
 repo_name: Docs-SQL-Alchemy_Bhs.Indonesia
