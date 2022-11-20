@@ -36,7 +36,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://bobchrismansyah.github.io/SQL-Alchemy-Core/docs/Multiple-Table-Deletes/</loc>
+         <lastmod>2022-11-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://bobchrismansyah.github.io/SQL-Alchemy-Core/docs/Multiple-Table-Updates/</loc>
+         <lastmod>2022-11-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://bobchrismansyah.github.io/SQL-Alchemy-Core/docs/Ordered-Updates/</loc>
          <lastmod>2022-11-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -57,6 +67,11 @@
     </url>
     <url>
          <loc>https://bobchrismansyah.github.io/SQL-Alchemy-Core/docs/Using-Aliases/</loc>
+         <lastmod>2022-11-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://bobchrismansyah.github.io/SQL-Alchemy-Core/docs/Using-Joins/</loc>
          <lastmod>2022-11-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
