@@ -204,10 +204,24 @@ addresses = Table(
 # ========== Menambahkan isi kedalam tabel addresses ==========
 
 # ========== mengambil data dari kedua tabel ==========
-from sqlalchemy.sql import select
-s = select([students, addresses]).where(students.c.id == addresses.c.st_id)
-result = conn.execute(s)
+# from sqlalchemy.sql import select
+# s = select([students, addresses]).where(students.c.id == addresses.c.st_id)
+# result = conn.execute(s)
 
-for row in result:
-   print (row)
+# for row in result:
+#    print (row)
 # ========== mengambil data dari kedua tabel ==========
+
+# ========== Update beberapa tabel ==========
+stmt = students.update().\
+values({
+   students.c.name:'Ariandini',
+   addresses.c.email_add:'dini.cantik@proton.me'
+}).\
+where(students.c.id == addresses.c.id)
+#Namun di SQLite tidak mendukung multi-table UPDATE 
+
+# stmt = students.update().\
+#    values(name = 'Bob').\
+#    where(students.c.id == addresses.c.id)
+# ========== Update beberapa tabel ==========
