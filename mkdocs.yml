@@ -21,6 +21,7 @@ nav:
         - Using Joins: docs/Using-Joins/index.md
         - Using Conjunctions: docs/Using-Conjunctions/index.md
         - Using Functions: docs/Using-Functions/index.md
+        - Using Set Operations: docs/Using-Set-Operations/index.md
         
 # Repository
 repo_name: Docs-SQL-Alchemy_Bhs.Indonesia

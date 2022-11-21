@@ -323,7 +323,42 @@ addresses = Table(
 # ========== Menggunakan function min ==========
 
 # ========== Menggunakan function avg ==========
-from sqlalchemy.sql import func
-result = conn.execute(select([func.avg(students.c.id)]))
-print (result.fetchone())
+# from sqlalchemy.sql import func
+# result = conn.execute(select([func.avg(students.c.id)]))
+# print (result.fetchone())
 # ========== Menggunakan function avg ==========
+
+# ========== Menggunakan union ==========
+# from sqlalchemy import union
+# u = union(addresses.select().where(addresses.c.email_add.like('%gmail%')), addresses.select().where(addresses.c.email_add.like('%yahoo%')))
+# result = conn.execute(u)
+
+# for row in result:
+#    print (row)
+# ========== Menggunakan union ==========
+
+# ========== Menggunakan union_all ==========
+# from sqlalchemy import union_all
+# u = union_all(addresses.select().where(addresses.c.email_add.like('%gmail%')), addresses.select().where(addresses.c.email_add.like('%yahoo%')))
+# result = conn.execute(u)
+
+# for row in result:
+#    print(row)
+# ========== Menggunakan union_all ==========
+
+# ========== Menggunakan except ==========
+# from sqlalchemy import except_
+# u = except_(addresses.select().where(addresses.c.email_add.like('%@ilkom.my.id')), addresses.select().where(addresses.c.postal_add.like('%PK ')))
+# result = conn.execute(u)
+
+# for row in result:
+#    print(row)
+# ========== Menggunakan except ==========
+
+# ========== Menggunakan intersect ==========
+from sqlalchemy import intersect
+u = intersect(addresses.select().where(addresses.c.email_add.like('%@gmail.com')), addresses.select().where(addresses.c.postal_add.like('%PK 5')))
+result = conn.execute(u)
+for row in result:
+   print(row)
+# ========== Menggunakan intersect ==========
