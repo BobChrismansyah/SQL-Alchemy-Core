@@ -290,10 +290,40 @@ addresses = Table(
 # ========== Menggunakan konjungsi desc ==========
 
 # ========== Menggunakan konjungsi between ==========
-from sqlalchemy import between
-stmt = select([students]).where(between(students.c.id,2,3))
-result = conn.execute(stmt)
+# from sqlalchemy import between
+# stmt = select([students]).where(between(students.c.id,2,3))
+# result = conn.execute(stmt)
 
-for row in result:
-   print (row)
+# for row in result:
+#    print (row)
 # ========== Menggunakan konjungsi between ==========
+
+# ========== Menggunakan function now ==========
+# from sqlalchemy.sql import func
+# result = conn.execute(select([func.now()]))
+# print (result.fetchone())
+# ========== Menggunakan function now ==========
+
+# ========== Menggunakan function count ==========
+# from sqlalchemy.sql import func
+# result = conn.execute(select([func.count(students.c.id)]))
+# print (result.fetchone())
+# ========== Menggunakan function count ==========
+
+# ========== Menggunakan function max ==========
+# from sqlalchemy.sql import func
+# result = conn.execute(select([func.max(students.c.id)]))
+# print (result.fetchone())
+# ========== Menggunakan function max ==========
+
+# ========== Menggunakan function min ==========
+# from sqlalchemy.sql import func
+# result = conn.execute(select([func.min(students.c.id)]))
+# print (result.fetchone())
+# ========== Menggunakan function min ==========
+
+# ========== Menggunakan function avg ==========
+from sqlalchemy.sql import func
+result = conn.execute(select([func.avg(students.c.id)]))
+print (result.fetchone())
+# ========== Menggunakan function avg ==========
