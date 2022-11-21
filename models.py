@@ -1,4 +1,4 @@
-from sqlalchemy import and_
+from sqlalchemy import and_, or_, asc, desc
 from sqlalchemy.sql import select
 from sqlalchemy import create_engine, MetaData, Table, Column, Integer, String
 
@@ -251,5 +251,49 @@ addresses = Table(
 
 # for row in result:
 #    print (row)
-       
 # ========== Menggunakan Join ==========
+
+# ========== Menggunakan konjungsi and_==========
+# from sqlalchemy import and_, or_
+# stmt = select([students]).where(and_(students.c.name == 'Ariandini', students.c.id <3))
+# result = conn.execute(stmt)
+
+# for row in result:
+#    print (row)
+# ========== Menggunakan konjungsi and_ ==========
+
+# ========== Menggunakan konjungsi or_ ==========
+# from sqlalchemy import and_, or_
+# stmt = select([students]).where(or_(students.c.name == 'Bob', students.c.id <3))
+# result = conn.execute(stmt)
+
+# for row in result:
+#    print (row)
+# ========== Menggunakan konjungsi or_ ==========
+
+# ========== Menggunakan konjungsi asc ==========
+# from sqlalchemy import asc
+# stmt = select([students]).order_by(asc(students.c.name))
+# result = conn.execute(stmt)
+
+# for row in result:
+#    print (row)
+# ========== Menggunakan konjungsi asc ==========
+
+# ========== Menggunakan konjungsi desc ==========
+# from sqlalchemy import desc
+# stmt = select([students]).order_by(desc(students.c.lastname))
+# result = conn.execute(stmt)
+
+# for row in result:
+#    print (row)
+# ========== Menggunakan konjungsi desc ==========
+
+# ========== Menggunakan konjungsi between ==========
+from sqlalchemy import between
+stmt = select([students]).where(between(students.c.id,2,3))
+result = conn.execute(stmt)
+
+for row in result:
+   print (row)
+# ========== Menggunakan konjungsi between ==========

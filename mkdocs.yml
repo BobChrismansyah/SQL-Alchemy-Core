@@ -19,6 +19,7 @@ nav:
         - Parameter Ordered Update: docs/Ordered-Updates/index.md
         - Multiple Table Delete: docs/Multiple-Table-Delete/index.md
         - Using Joins: docs/Using-Joins/index.md
+        - Using Conjunctions: docs/Using-Conjunctions/index.md
         
 # Repository
 repo_name: Docs-SQL-Alchemy_Bhs.Indonesia
