@@ -7,7 +7,7 @@ nav:
     - About: about.md
     - docs:
         - Docs: index.md
-        # - SQL-Alchemy Core: docs/index.md
+        - Setup: docs/Environment-Setup/index.md
         - Expression Language: docs/Expression-Language/index.md
         - Connecting to Database: docs/Connecting-to-Database/index.md
         - Creating Table: docs/Creating-Table/index.md
