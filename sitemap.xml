@@ -76,6 +76,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://bobchrismansyah.github.io/SQL-Alchemy-Core/docs/Using-Functions/</loc>
+         <lastmod>2022-11-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://bobchrismansyah.github.io/SQL-Alchemy-Core/docs/Using-Joins/</loc>
          <lastmod>2022-11-21</lastmod>
          <changefreq>daily</changefreq>
