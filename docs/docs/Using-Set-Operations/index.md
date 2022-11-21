@@ -72,7 +72,7 @@ FROM addresses
 WHERE addresses.email_add LIKE ?
 ```
 
-##### excewpt()
+##### except()
 
 Klausa/operator SQL EXCEPT digunakan untuk menggabungkan dua pernyataan SELECT dan mengembalikan baris dari pernyataan SELECT pertama yang tidak dikembalikan oleh pernyataan SELECT kedua. Fungsi exception_() menghasilkan ekspresi SELECT dengan klausa EXCEPT.
 
