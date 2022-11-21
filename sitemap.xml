@@ -91,6 +91,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://bobchrismansyah.github.io/SQL-Alchemy-Core/docs/Using-Set-Operations/</loc>
+         <lastmod>2022-11-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://bobchrismansyah.github.io/SQL-Alchemy-Core/docs/Using-Textual-SQL/</loc>
          <lastmod>2022-11-21</lastmod>
          <changefreq>daily</changefreq>
